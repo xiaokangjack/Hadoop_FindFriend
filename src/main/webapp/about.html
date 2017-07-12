@@ -1,0 +1,23 @@
+
+<html>
+ 
+  
+  <body>
+ <h1 style="align:center"> Welcome to Friend Find </h1>
+	
+	<br>
+	<div style="padding-left: 160px;padding-right:200px;font-size: 15px;padding-top:10px;">
+
+                    本系统是一个寻找相似用户的系统。系统数据使用的是
+		http://stackoverflow.com/网站上的用户数据。源数据格式如下：<br>
+		Id="2" Reputation="101" CreationDate="xxxx" DisplayName="xxx" EmailHash="xxx" LastAccessDate="xxx" WebsiteUrl="xxx" Location="xxx" Age="xxx" AboutMe="xxx" Views="25" UpVotes="7" DownVotes="0"<br>
+		我们寻找相似用户基于以下数据：Reputation（声望或者积分）、Views（提问次数）、UpVotes（得到的赞成数）和DownVotes（得到的反对数）。
+		假设用户对于一个领域问题的“态度”就可以反映出该用户的价值取向，我们依据此价值取向来对用户进行分组。这里的态度可以使用以上指标属性来评判。
+		聚类算法流程采用论文《Clustering by fast search and find of density peaks》中提出的聚类算法。
+		项目框架采用Struts2+Hibernate+Spring+EasyUI的架构，Hadoop集群使用完全全分布方式，也适用于伪分布方式。
+		项目开发可参考博客
+		源码可参考
+
+	</div>
+  </body>
+</html>
